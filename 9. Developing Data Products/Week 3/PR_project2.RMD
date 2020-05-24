@@ -1,0 +1,19 @@
+---
+title: "Week 3 Assignment"
+author: "Syed Albhi Fahad"
+date: "May 23, 2020"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## May 23, 2020
+### Correlation between MPG and DISP in MTCARS data
+```{r, echo=FALSE, message=FALSE, warning=FALSE,fig.width=6, fig.height=4}
+library(plotly)
+plot_ly(mtcars, x=~mpg, y=~disp, mode="markers") 
+```
